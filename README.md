@@ -17,6 +17,7 @@ Note Taker was created to create notes on various things and to help keep organi
 
 installation goes here
 npm i express
+npm install uniqid
 
 ## Usage 
 
