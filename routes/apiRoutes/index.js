@@ -9,7 +9,7 @@ const { notes } = require('../../db/db.json');
 function createNote(body, noteArray) {
   const newNote = body;
   noteArray.push(newNote);
-  fs.writeFileSync(
+  fs.writeFile(
     path.join(__dirname, '../../db/db.json'),
     JSON.stringify({ notes }, null, 2)
   );
@@ -22,8 +22,8 @@ router.get('/api/notes', (req, res) => {
     if (err) {
       return console.error(err);
     }
-    let results = data;
-    res.json(results);
+    
+    res.json(data);
   }))
 });
 
@@ -32,6 +32,7 @@ router.post('/api/notes', (req, res) => {
   req.body.id = uniqid();
   
   const note = createNote(req.body, notes);
+  console.log(note);
   res.json(note);
 });
 
