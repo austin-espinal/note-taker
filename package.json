@@ -1,15 +1,25 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "Note Taker was created to create notes on various things and to help keep organize. It will assist in keeping track of tasks and keep the user on track. The user will be able to make notes and save them. This project uses HTML, CSS, Javascript, and Node.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2",
     "uniqid": "^5.4.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austin-espinal/note-taker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/austin-espinal/note-taker/issues"
+  },
+  "homepage": "https://github.com/austin-espinal/note-taker#readme"
 }
